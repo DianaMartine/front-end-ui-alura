@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gatitoshop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/base.css" />
+    <link rel="stylesheet" href="assets/css/cabecalho.css" />
+    <link rel="stylesheet" href="assets/css/produto.css" />
+    <link rel="stylesheet" href="assets/css/outros-produtos.css" />
+    <link rel="stylesheet" href="assets/css/carousel.css">
+    <link rel="stylesheet" href="assets/css/rodape.css">
+  </head>
+  <body>
+    <header class="cabecalho container">
+      <div class="cabecalho__divisao">
+        <img
+          src="assets/img/logo.svg"
+          alt="logo gatito"
+          class="cabecalho__logo"
+        />
+        <h1 class="cabecalho__titulo">gatito</h1>
+      </div>
+      <nav>
+        <ul class="cabecalho__navegacao">
+          <li class="cabecalho__item"><a href="#">Home</a></li>
+          <li class="cabecalho__item"><a href="#">Sobre</a></li>
+          <li class="cabecalho__item"><a href="#">Contato</a></li>
+          <li class="cabecalho__item">
+            <a href="#"
+              ><img
+                src="assets/img/lupa.svg"
+                alt="ícone de busca"
+                aria-label="busca"
+            /></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="produto">
+        <div class="produto__foto"></div>
+        <article class="produto__descricao container">
+          <h2 class="produto__marca">GATITO</h2>
+          <div class="produto__divisao">
+            <p class="produto__preco">R$ 128,90</p>
+            <h3 class="produto__nome">
+              GATITO PRO PLAN SENSITIVE SKIN & STOMACH CAT FOOD
+            </h3>
+            <p class="produto__texto">
+              The food you choose for your cat will help keep them happy,
+              healthy, and feeling extraordinary. Help your cat be their best –
+              inside and out – with the advanced nutrition of Gatito Pro Plan
+              Sensitive Skin & Stomach formulas.
+            </p>
+            <p class="produto__texto">
+              When a cat has a sensitive stomach or irritable skin, it not only
+              impacts which food they can eat, it can also affect their quality
+              of life. Pro Plan Sensitive Skin & Stomach formulas are developed
+              with specialized nutrition that promotes digestive health, healthy
+              skin and a shiny coat.
+            </p>
+            <p class="produto__texto">
+              And because every cat is unique, we offer choices suited to their
+              needs and preferences, such as options with salmon or lamb as the
+              first ingredient, as well as lifestage and breed size-specific
+              formulas.
+            </p>
+            <button class="produto__comprar">COMPRAR</button>
+          </div>
+        </article>
+      </section>
+      <section class="outros-produtos">
+        <h2 class="outros-produtos__titulo">nossos outros produtos</h2>
+        <article class="carousel">
+          <button
+            class="carousel__botao carousel__botao--anterior"
+            aria-label="botão de voltar" data-anterior
+          ></button
+          ><button
+            class="carousel__botao carousel__botao--proximo"
+            aria-label="botão de avançar" data-proximo
+          ></button>
+          <ul class="carousel__lista-produtos" data-lista-produtos>
+            <a href="#" class="carousel__produto">
+              <li class="carousel__imagem-container">
+                <img
+                  src="assets/img/produto1.png"
+                  alt="imagem de gato"
+                  class="carousel__imagem"
+                />
+              </li>
+            </a>
+            <a href="#" class="carousel__produto">
+              <li class="carousel__imagem-container">
+                <img
+                  src="assets/img/produto2.png"
+                  alt="imagem de gato"
+                  class="carousel__imagem"
+                />
+              </li>
+            </a>
+            <a href="#" class="carousel__produto">
+              <li class="carousel__imagem-container">
+                <img
+                  src="assets/img/produto3.png"
+                  alt="imagem de gato"
+                  class="carousel__imagem"
+                />
+              </li>
+            </a>
+            <a href="#" class="carousel__produto">
+              <li class="carousel__imagem-container">
+                <img
+                  src="assets/img/produto4.png"
+                  alt="imagem de gato"
+                  class="carousel__imagem"
+                />
+              </li>
+            </a>
+            <a href="#" class="carousel__produto">
+              <li class="carousel__imagem-container">
+                <img
+                  src="assets/img/produto5.png"
+                  alt="imagem de gato"
+                  class="carousel__imagem"
+                />
+              </li>
+            </a>
+          </ul>
+          <div class="carousel__indicadores" data-navegacao>
+            <button class="carousel__indicador carousel__indicador--ativo" aria-label="Slide 1" data-indicador="0"></button
+            ><button class="carousel__indicador" aria-label="Slide 2" data-indicador="1"></button
+            ><button class="carousel__indicador" aria-label="Slide 3" data-indicador="2"></button
+            ><button class="carousel__indicador" aria-label="Slide 4" data-indicador="3"></button
+            ><button class="carousel__indicador" aria-label="Slide 5" data-indicador="4"></button>
+          </div>
+        </article>
+      </section>
+    </main>
+    <footer class="rodape container">
+      <div class="rodape__divisao">
+        <img src="assets/img/logo.svg" alt="logo gatito" class="rodape__logo">
+        <h2 class="rodape__titulo">gatito</h2>
+      </div>
+      <nav>
+        <ul class="rodape__navegacao">
+          <li class="rodape__item"><a href="#" class="link">Sobre</a></li>
+          <li class="rodape__item"><a href="#" class="link">Contato</a></li>
+        </ul>
+      </nav>
+    </footer>
+    <script src="assets/js/index.js" type="module"></script>
+  </body>
+</html>
